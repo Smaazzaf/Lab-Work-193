@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+    float datausage;
+    printf("Enter the total amount of data used this month");
+    scanf("%f",&datausage);
+    if(datausage>0 || datausage<=100){
+        printf("\n Your internet bill with tax is %f",(datausage*2)+datausage*0.1);
+    }
+    else if(datausage>100 || datausage<=200){
+        printf("\n Your internet bill with tax is %f",(datausage*1.5)+datausage*0.1);
+    }
+    else if(datausage>200 || datausage<=400){
+        printf("\n Your internet bill with tax is %f",(datausage*1)+datausage*0.1);
+    }
+    else if(datausage>400){
+        printf("\n Your internet bill with tax is %f",(datausage*0.5)+datausage*0.1);
+    }
+}
