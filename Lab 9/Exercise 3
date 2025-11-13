@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+	int arr[3];
+	//declare pointer varaible
+	int *ptr;
+	// declare loop iterator varaible
+	int i;
+	//ptr =&arr[0]
+	ptr =arr;
+	//user for loop to put values in all array elements using pointer notation for (i=0;i<3;++i)
+	{
+		*(ptr+i) = i+1;
+	}
+	// use for loop to print values of all array elements using pointer notation printf("\nDisplaying value using pointers:");
+	for (i=0;i<3;i++)
+	{
+		printf("%d\n",*(ptr+i));
+		
+	}
+	// user for loop to print addresses of all array elements using pointer notation printf("\nDisplaying addresses using pointers:");
+	for (i=0;i<3;i++);
+	{
+		printf("%p\n",ptr+i);
+	}
+}
